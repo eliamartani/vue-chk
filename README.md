@@ -2,6 +2,8 @@
 
 Custom checkbox made simple at its best.
 
+![Simple example](https://raw.githubusercontent.com/eliamartani/vue-chk/master/doc/chk.png 'Simple example')
+
 ## Install
 
 ```bash
