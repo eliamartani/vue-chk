@@ -51,6 +51,16 @@ v-model: `Boolean` <-- it's reactive 💪
 
 `@input` (totally optional): Triggers when checkbox is clicked
 
+## Customizing
+
+You do it, only few css were added to make it work.
+
+## TODO
+
+- [ ] Possibility to work with lists
+- [ ] Add tests
+- [ ] Add types other than boolean
+
 ## License
 
 [MIT](LICENSE)
