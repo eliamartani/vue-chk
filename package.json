@@ -1,0 +1,23 @@
+{
+  "name": "vue-chk",
+  "version": "1.0.0",
+  "description": "simples custom checkbox possible for vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliamartani/vue-chk.git"
+  },
+  "keywords": [
+    "vuejs",
+    "checkbox"
+  ],
+  "author": "Eliamar Tani<eliamartani@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eliamartani/vue-chk/issues"
+  },
+  "homepage": "https://github.com/eliamartani/vue-chk#readme"
+}
