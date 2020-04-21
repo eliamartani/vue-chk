@@ -1,10 +1,12 @@
 {
   "name": "vue-chk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "simples custom checkbox possible for vue",
-  "main": "index.js",
+  "main": "dist/vue-chk.umd.js",
+  "module": "dist/vue-chk.common.js",
+  "unpkg": "dist/vue-chk.umd.min.js",
   "scripts": {
-    "test": "jest"
+    "build": "vue-cli-service build --target lib src/Checkbox.vue --inline-vue"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,19 @@
   "bugs": {
     "url": "https://github.com/eliamartani/vue-chk/issues"
   },
-  "homepage": "https://github.com/eliamartani/vue-chk#readme"
+  "homepage": "https://github.com/eliamartani/vue-chk#readme",
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.3.1",
+    "@vue/cli-service": "^4.3.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
