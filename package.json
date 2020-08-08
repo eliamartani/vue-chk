@@ -1,12 +1,12 @@
 {
   "name": "vue-chk",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "simples custom checkbox possible for vue",
   "main": "dist/vue-chk.umd.js",
   "module": "dist/vue-chk.common.js",
   "unpkg": "dist/vue-chk.umd.min.js",
   "scripts": {
-    "build": "npm run build:lib && npm run build:wc",
+    "build": "npm run build:lib && npm run build:wc && rimraf dist/demo.html",
     "build:lib": "vue-cli-service build --target lib --name vue-chk src/main.js --no-clean",
     "build:wc": "vue-cli-service build --target wc --name vue-chk src/*.vue --no-clean"
   },
@@ -27,6 +27,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.4.6",
     "@vue/cli-service": "^4.4.6",
+    "rimraf": "^3.0.2",
     "vue-template-compiler": "^2.6.11"
   },
   "peerDependencies": {
