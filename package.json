@@ -25,8 +25,8 @@
   },
   "homepage": "https://github.com/eliamartani/vue-chk#readme",
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.4.1",
-    "@vue/cli-service": "^4.4.1",
+    "@vue/cli-plugin-babel": "^4.4.6",
+    "@vue/cli-service": "^4.4.6",
     "vue-template-compiler": "^2.6.11"
   },
   "peerDependencies": {
