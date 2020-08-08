@@ -57,9 +57,7 @@ You do it, only few css were added to make it work.
 
 ## TODO
 
-- [ ] Possibility to work with lists
 - [ ] Add tests
-- [ ] Add types other than boolean
 
 ## License
 
