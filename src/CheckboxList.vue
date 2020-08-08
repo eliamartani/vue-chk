@@ -5,7 +5,9 @@
       :key="`vue-chk_${index}`"
       class="vue-chk"
     >
-      <slot name="item--slot" v-bind:item="item" />
+      <slot name="item--slot" v-bind:item="item">
+        {{ item }}
+      </slot>
       <input
         v-model="addedList"
         :value="item"
