@@ -13,6 +13,8 @@ npm install vue-chk
 
 ## Usage
 
+### Single checkbox
+
 Globally:
 
 ```javascript
@@ -21,7 +23,7 @@ import chk from 'vue-chk'
 Vue.component('vue-chk', chk)
 ```
 
-or individually:
+or inside component:
 
 ```javascript
 import chk from 'vue-chk'
@@ -38,14 +40,59 @@ export default {
 After that:
 
 ```html
-<vue-chk v-model="prop"></vue-chk>
-
-<vue-chk v-model="prop">With text</vue-chk>
+<vue-chk v-model="prop">Check me</vue-chk>
 ```
 
-## Prop
+#### Prop
 
-v-model: `Boolean` <-- it's reactive 💪
+v-model: `Boolean`, `Date`, `String`, `Number` <-- it's reactive 💪
+
+### Checkbox list
+
+Globally:
+
+```javascript
+import { CheckboxList } from 'vue-chk'
+
+Vue.component('vue-chk-list', CheckboxList)
+```
+
+or inside component:
+
+```javascript
+import { CheckboxList } from 'vue-chk'
+
+export default {
+  components: {
+    'vue-chk-list': CheckboxList
+  }
+}
+```
+
+After that:
+
+```html
+<vue-chk-list v-model="values" :list="items" />
+
+<!-- or -->
+
+<vue-chk-list v-model="values" :list="items">
+  <template slot="item--slot" slot-scope="item">{{ item.label }}</template>
+</vue-chk-list>
+```
+
+#### Prop
+
+- v-model: `Array` object where all checked items are saved
+- list: `Array` object with its items to be showed
+
+#### Slot
+
+The list offers the possibility to customize what will be shown, its slot is named `item--slot` with its scope representing an item inside the `list` property
+
+```html
+<template slot="item--slot" slot-scope="item">{{ item.label }}</template>
+```
 
 ## API
 
