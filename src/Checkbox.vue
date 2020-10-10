@@ -11,17 +11,17 @@ export default {
   props: {
     value: {
       required: true,
-      type: Date | Number | String | Boolean
+      type: [Date, Number, String, Boolean]
     },
     valueFalse: {
       default: null,
       required: false,
-      type: Date | Number | String | Boolean
+      type: [Date, Number, String, Boolean]
     },
     valueTrue: {
       default: null,
       required: false,
-      type: Date | Number | String | Boolean
+      type: [Date, Number, String, Boolean]
     }
   },
   data() {
