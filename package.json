@@ -1,6 +1,6 @@
 {
   "name": "vue-chk",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "simples custom checkbox possible for vue",
   "author": "Eliamar Tani<eliamartani@gmail.com>",
   "scripts": {
