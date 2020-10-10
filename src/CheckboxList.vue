@@ -2,10 +2,10 @@
   <div class="vue-chk-list">
     <label
       v-for="(item, index) in list"
-      :key="`vue-chk_${index}`"
+      :key="`vue-chk-${index}`"
       class="vue-chk"
     >
-      <slot name="item--slot" v-bind:item="item">
+      <slot name="item--slot" :item="item">
         {{ item }}
       </slot>
       <input
