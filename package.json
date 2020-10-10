@@ -1,42 +1,51 @@
 {
   "name": "vue-chk",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "simples custom checkbox possible for vue",
-  "main": "dist/vue-chk.umd.js",
-  "module": "dist/vue-chk.common.js",
-  "unpkg": "dist/vue-chk.umd.min.js",
+  "author": "Eliamar Tani<eliamartani@gmail.com>",
   "scripts": {
-    "build": "npm run build:lib && npm run build:wc && rimraf dist/demo.html",
+    "build": "npm run build:lib && npm run build:wc",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
     "build:lib": "vue-cli-service build --target lib --name vue-chk src/main.js --no-clean",
     "build:wc": "vue-cli-service build --target wc --name vue-chk src/*.vue --no-clean"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eliamartani/vue-chk.git"
-  },
-  "keywords": [
-    "vuejs",
-    "checkbox"
-  ],
-  "author": "Eliamar Tani<eliamartani@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/eliamartani/vue-chk/issues"
-  },
-  "homepage": "https://github.com/eliamartani/vue-chk#readme",
+  "main": "dist/vue-chk.umd.js",
+  "module": "dist/vue-chk.common.js",
+  "unpkg": "dist/vue-chk.umd.min.js",
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.4.6",
-    "@vue/cli-service": "^4.4.6",
-    "rimraf": "^3.0.2",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "peerDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.7",
+    "@vue/cli-plugin-eslint": "^4.5.7",
+    "@vue/cli-plugin-unit-jest": "^4.5.7",
+    "@vue/cli-service": "^4.5.7",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/test-utils": "^1.1.0",
+    "babel-eslint": "^10.1.0",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "eslint": "^7.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^7.0.1",
+    "prettier": "^2.1.2",
+    "vue": "^2.6.12",
+    "vue-template-compiler": "^2.6.12"
   },
+  "peerDependencies": {},
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/eliamartani/vue-chk/issues"
+  },
+  "homepage": "https://github.com/eliamartani/vue-chk#readme",
+  "keywords": [
+    "vuejs",
+    "checkbox"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliamartani/vue-chk.git"
+  }
 }
