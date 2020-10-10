@@ -102,10 +102,6 @@ The list offers the possibility to customize what will be shown, its slot is nam
 
 You do it, only few css were added to make it work.
 
-## TODO
-
-- [ ] Add tests
-
 ## License
 
 [MIT](LICENSE)
