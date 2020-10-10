@@ -2,7 +2,7 @@
 
 Custom checkbox made simple at its best.
 
-![Simple example](https://raw.githubusercontent.com/eliamartani/vue-chk/master/doc/chk.png 'Simple example')
+![Simple example](https://raw.githubusercontent.com/eliamartani/vue-chk/master/doc/assets/chk.png 'Simple example')
 
 ## Install
 
