@@ -4,10 +4,10 @@
       v-for="(item, index) in list"
       :key="`vue-chk-${index}`"
       class="vue-chk"
+      :class="{
+        'vue-chk--before': labelPosition === 'before'
+      }"
     >
-      <slot name="item--slot" :item="item">
-        {{ item }}
-      </slot>
       <input
         v-model="addedList"
         :value="item"
@@ -15,7 +15,14 @@
         type="checkbox"
         @change="handleClick"
       />
+
       <span class="vue-chk__check"></span>
+
+      <span class="vue-chk__label">
+        <slot name="item--slot" :item="item">
+          {{ item }}
+        </slot>
+      </span>
     </label>
   </div>
 </template>
@@ -23,6 +30,12 @@
 <script>
 export default {
   props: {
+    labelPosition: {
+      default: 'after',
+      required: false,
+      type: String,
+      validator: (value) => ['after', 'before'].includes(value)
+    },
     list: {
       required: true,
       type: Array

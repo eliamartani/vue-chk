@@ -1,14 +1,16 @@
 {
   "name": "vue-chk",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "description": "simples custom checkbox possible for vue",
   "author": "Eliamar Tani<eliamartani@gmail.com>",
   "scripts": {
     "build": "npm run build:lib && npm run build:wc",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint",
+    "build:docs": "vuepress build docs",
     "build:lib": "vue-cli-service build --target lib --name vue-chk src/main.js --no-clean",
-    "build:wc": "vue-cli-service build --target wc --name vue-chk src/*.vue --no-clean"
+    "build:wc": "vue-cli-service build --target wc --name vue-chk src/*.vue --no-clean",
+    "docs": "vuepress dev docs",
+    "lint": "vue-cli-service lint",
+    "test": "vue-cli-service test:unit"
   },
   "main": "dist/vue-chk.umd.js",
   "module": "dist/vue-chk.common.js",
@@ -26,10 +28,12 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.4.1",
     "prettier": "^2.2.1",
+    "sass": "^1.32.6",
+    "sass-loader": "^10.1.1",
     "vue": "^2.6.12",
-    "vue-template-compiler": "^2.6.12"
+    "vue-template-compiler": "^2.6.12",
+    "vuepress": "^1.8.0"
   },
-  "peerDependencies": {},
   "browserslist": [
     "> 1%",
     "last 2 versions",
@@ -38,7 +42,7 @@
   "bugs": {
     "url": "https://github.com/eliamartani/vue-chk/issues"
   },
-  "homepage": "https://github.com/eliamartani/vue-chk#readme",
+  "homepage": "https://github.com/eliamartani/vue-chk",
   "keywords": [
     "vuejs",
     "checkbox"
