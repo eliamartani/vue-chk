@@ -1,8 +1,23 @@
-# vue-chk
+---
+home: true
+footer: Made by Eliamar Tani with ❤️
+---
 
 Custom checkbox made simple at its best.
 
-![Simple example](https://raw.githubusercontent.com/eliamartani/vue-chk/master/docs/assets/chk.png 'Simple example')
+## Table of Contents <!-- omit in toc -->
+
+- [Install](#install)
+- [Vue-Chk](#vue-chk)
+  - [Usage](#usage)
+  - [Property](#property)
+- [Vue-Chk-List](#vue-chk-list)
+  - [Usage](#usage-1)
+  - [Properties](#properties)
+  - [Slot](#slot)
+- [API](#api)
+- [Customizing](#customizing)
+- [License](#license)
 
 ## Install
 
@@ -58,7 +73,7 @@ After that:
 <vue-chk v-model="prop">Check me</vue-chk>
 ```
 
-#### Property
+### Property
 
 v-model: `Boolean`, `Date`, `String`, `Number`
 
@@ -94,16 +109,16 @@ After that:
 <!-- or -->
 
 <vue-chk-list v-model="values" :list="items">
-  <template slot="item--slot" slot-scope="item">{{ item.label }}</template>
+  <template slot="item--slot" slot-scope="{ item }">{{ item.label }}</template>
 </vue-chk-list>
 ```
 
-#### Properties
+### Properties
 
 - v-model: `Array` object where all checked items are saved
 - list: `Array` object with its items to be showed
 
-#### Slot
+### Slot
 
 The list offers the possibility to customize what will be shown, its slot is named `item--slot` with its scope representing an item inside the `list` property
 
