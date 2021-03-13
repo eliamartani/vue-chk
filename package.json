@@ -1,6 +1,6 @@
 {
-  "name": "vue-chk",
-  "version": "1.3.0",
+  "name": "@eliamartani/vue-chk",
+  "version": "1.3.2",
   "description": "simplest custom checkbox possible for vue",
   "author": "Eliamar Tani<eliamartani@gmail.com>",
   "scripts": {
@@ -24,7 +24,7 @@
     "@vue/test-utils": "^1.1.3",
     "babel-eslint": "^10.1.0",
     "core-js": "^3.9.1",
-    "eslint": "^7.21.0",
+    "eslint": "^7.22.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.7.0",
     "husky": "^5.1.3",
@@ -53,6 +53,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eliamartani/vue-chk.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "husky": {
     "hooks": {
