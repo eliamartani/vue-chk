@@ -10,6 +10,7 @@
     "build:wc": "vue-cli-service build --target wc --name vue-chk src/*.vue --no-clean",
     "docs": "vuepress dev docs",
     "lint": "vue-cli-service lint",
+    "publish": "node ./scripts/publish.js",
     "test": "vue-cli-service test:unit"
   },
   "main": "dist/vue-chk.umd.js",
